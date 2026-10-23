@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="teslaGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#220e14"/>
+      <stop offset="100%" stop-color="#070709"/>
+    </radialGradient>
+    <linearGradient id="arcGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3344"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ff1133"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#teslaGlow)" rx="8"/>
+
+  <!-- Tesla Coil & Resonant Wireless Power Illustration -->
+  <g transform="translate(180, 45)">
+    <!-- Base Platform -->
+    <rect x="50" y="210" width="140" height="25" rx="4" fill="#1b1b20" stroke="#333" stroke-width="2"/>
+    <rect x="70" y="200" width="100" height="10" fill="#25252c"/>
+
+    <!-- Primary Heavy Copper Coil (Base) -->
+    <path d="M60 195 Q120 185 180 195" stroke="#cc5500" stroke-width="5" fill="none"/>
+    <path d="M60 185 Q120 175 180 185" stroke="#cc5500" stroke-width="5" fill="none"/>
+    <path d="M60 175 Q120 165 180 175" stroke="#cc5500" stroke-width="5" fill="none"/>
+
+    <!-- Secondary Vertical Resonant Coil Cylinder -->
+    <rect x="105" y="70" width="30" height="105" rx="3" fill="#881118" stroke="#cc2233" stroke-width="1.5"/>
+    <!-- Wire windings lines -->
+    <path d="M105 78 H135 M105 86 H135 M105 94 H135 M105 102 H135 M105 110 H135 M105 118 H135 M105 126 H135 M105 134 H135 M105 142 H135 M105 150 H135 M105 158 H135 M105 166 H135" stroke="#ff4455" stroke-width="1" opacity="0.6"/>
+
+    <!-- Top Toroid Terminal -->
+    <ellipse cx="120" cy="55" rx="55" ry="16" fill="#444" stroke="#888" stroke-width="2"/>
+    <ellipse cx="120" cy="53" rx="48" ry="12" fill="#777"/>
+    <ellipse cx="120" cy="52" rx="35" ry="8" fill="#aaa"/>
+
+    <!-- Electric Arcs & Plasma Streamers -->
+    <path d="M165 48 Q195 30 220 55 Q235 45 255 70" stroke="url(#arcGlow)" stroke-width="2.5" fill="none"/>
+    <path d="M75 48 Q40 30 20 50 Q10 40 -10 65" stroke="url(#arcGlow)" stroke-width="2.5" fill="none"/>
+    <path d="M150 40 Q170 15 160 5" stroke="#ff4466" stroke-width="1.5" fill="none"/>
+
+    <!-- Wirelessly Lit Fluorescent Bulb in Mid-Air -->
+    <g transform="translate(250, 60) rotate(20)">
+      <circle cx="20" cy="20" r="30" fill="rgba(255, 230, 230, 0.2)" filter="blur(8px)"/>
+      <rect x="0" y="5" width="40" height="70" rx="20" fill="#ffffff" stroke="#ff2244" stroke-width="2"/>
+      <line x1="20" y1="20" x2="20" y2="60" stroke="#ffbb33" stroke-width="2"/>
+      <text x="5" y="95" fill="#ff4455" font-family="sans-serif" font-size="9" font-weight="bold">WIRELESS POWER</text>
+    </g>
+  </g>
+
+  <!-- Title & Specs Overlay -->
+  <text x="36" y="46" fill="#e50914" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="2">HIGH VOLTAGE / PHYSICS</text>
+  <text x="36" y="270" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="800">WIRELESS POWER TRANSFER</text>
+  <text x="36" y="296" fill="#e50914" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="800">SOLID STATE TESLA COIL</text>
+  <text x="36" y="325" fill="#888" font-family="sans-serif" font-size="11" letter-spacing="1">ELECTROMAGNETIC RESONANCE • INDUCTIVE POWER HARVESTING</text>
+</svg>

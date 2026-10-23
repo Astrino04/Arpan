@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="screenBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140708"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </linearGradient>
+    <linearGradient id="metalRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#333"/>
+      <stop offset="50%" stop-color="#666"/>
+      <stop offset="100%" stop-color="#222"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(40, 240)">
+    <ellipse cx="40" cy="120" rx="35" ry="8" fill="rgba(0,0,0,0.5)"/>
+    <path d="M15 40 L20 115 C20 125 60 125 60 115 L65 40 Z" fill="#181818" stroke="#333" stroke-width="1.5"/>
+    <ellipse cx="40" cy="40" rx="25" ry="8" fill="#0d0d0d" stroke="#333" stroke-width="1.5"/>
+    <ellipse cx="40" cy="41" rx="22" ry="6" fill="#2d1a13"/>
+    <path d="M17 50 C-5 50 -5 95 18 95" fill="none" stroke="#262626" stroke-width="5" stroke-linecap="round"/>
+    <text x="34" y="85" fill="#e50914" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="bold">A</text>
+  </g>
+
+  <g transform="translate(100, 50)">
+    <ellipse cx="250" cy="320" rx="240" ry="20" fill="rgba(0,0,0,0.8)"/>
+    
+    <rect x="30" y="10" width="440" height="280" rx="14" fill="#161618" stroke="url(#metalRim)" stroke-width="2"/>
+    <rect x="44" y="24" width="412" height="252" rx="4" fill="url(#screenBg)"/>
+    <circle cx="250" cy="17" r="2.5" fill="#050505"/>
+
+    <g transform="translate(44, 24)">
+      <rect x="20" y="15" width="372" height="20" fill="rgba(255,255,255,0.03)" rx="3"/>
+      <circle cx="32" cy="25" r="3" fill="#e50914"/>
+      <text x="44" y="28" fill="#aaa" font-family="sans-serif" font-size="8" font-weight="bold">ARPAN • DIPLOMA AI &amp; ML (LPU)</text>
+      
+      <text x="24" y="75" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800">BUILDING</text>
+      <text x="24" y="93" fill="#e50914" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800">AI &amp; ROBOTICS</text>
+      <text x="24" y="111" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800">SYSTEMS</text>
+      <text x="24" y="129" fill="#888" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">AUTONOMOUS &amp; HARDWARE</text>
+
+      <rect x="230" y="55" width="160" height="90" rx="6" fill="#1f0a0c" stroke="#e50914" stroke-width="1"/>
+      <path d="M245 115 L285 75 L320 100 L370 65" stroke="#e50914" stroke-width="3" fill="none"/>
+      
+      <rect x="24" y="150" width="105" height="75" rx="4" fill="#121212" stroke="#252525" stroke-width="1"/>
+      <rect x="145" y="150" width="105" height="75" rx="4" fill="#121212" stroke="#252525" stroke-width="1"/>
+      <rect x="266" y="150" width="124" height="75" rx="4" fill="#121212" stroke="#252525" stroke-width="1"/>
+    </g>
+
+    <path d="M0 290 L500 290 L470 302 L30 302 Z" fill="#2b2b2e" stroke="#444" stroke-width="1"/>
+    <rect x="220" y="291" width="60" height="4" rx="2" fill="#151515"/>
+    <path d="M25 302 L475 302 L460 309 L40 309 Z" fill="#1c1c1e"/>
+  </g>
+</svg>

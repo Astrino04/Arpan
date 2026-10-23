@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="fashionBg" cx="75%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#2a1012"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </radialGradient>
+    <linearGradient id="dressGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a2b"/>
+      <stop offset="50%" stop-color="#b80c18"/>
+      <stop offset="100%" stop-color="#50040a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#fashionBg)" rx="8"/>
+  
+  <g transform="translate(340, 50)">
+    <circle cx="90" cy="130" r="110" fill="rgba(229, 9, 20, 0.18)" filter="blur(20px)"/>
+    <circle cx="90" cy="60" r="26" fill="#eed2b8"/>
+    <path d="M68 65 Q65 30 90 28 Q115 30 112 65 Q115 80 102 85 Q90 60 78 85 Z" fill="#1c120c"/>
+    <rect x="84" y="82" width="12" height="20" fill="#dfc0a5"/>
+    <path d="M60 102 C70 98 110 98 120 102 C126 125 130 170 120 200 L60 200 C50 170 54 125 60 102 Z" fill="url(#dressGrad)"/>
+    <path d="M60 200 Q40 270 20 310 L160 310 Q140 270 120 200 Z" fill="url(#dressGrad)"/>
+    <path d="M60 104 Q40 140 45 180" stroke="#dfc0a5" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M120 104 Q140 140 135 180" stroke="#dfc0a5" stroke-width="10" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <text x="40" y="50" fill="#666" font-family="sans-serif" font-size="12" font-weight="700" letter-spacing="3">URBANIC</text>
+  <text x="40" y="160" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800" letter-spacing="1">STAY</text>
+  <text x="40" y="198" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800" letter-spacing="1">AHEAD</text>
+  <text x="40" y="236" fill="#e50914" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800" letter-spacing="1">IN STYLE</text>
+  <text x="40" y="275" fill="#888" font-family="sans-serif" font-size="11" letter-spacing="2">FASHION EDITORIAL 2026</text>
+</svg>

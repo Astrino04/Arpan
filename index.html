@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpan — Diploma AI &amp; ML | LPU Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@700;800;900&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <div class="loader-text">Loading Experience</div>
+      <div id="progress" class="loader-progress">0%</div>
+    </div>
+  </div>
+
+  <!-- Background Video Canvas (Fixed) -->
+  <div class="canvas-viewport">
+    <canvas id="animation-canvas"></canvas>
+    <div class="canvas-overlay"></div>
+  </div>
+
+  <!-- Page Content Layers -->
+  <div class="page-content">
+
+    <!-- Top Navigation -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <span class="brand-title">DIPLOMA AI &amp; ML</span>
+        <span class="brand-subtitle">LOVELY PROFESSIONAL UNIVERSITY (LPU)</span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Massive Background Typography -->
+      <div class="hero-bg-text" aria-hidden="true">PORTFOLIO</div>
+
+      <div class="hero-content-wrapper">
+        <!-- Hero Left Profile Info -->
+        <div class="hero-left">
+          <div class="hello-tag">Hello, I'm</div>
+          <h1 class="hero-name">
+            <span>ARPAN</span>
+          </h1>
+          <h2 class="hero-role">
+            <span class="white-text">DIPLOMA IN AI &amp; ML @</span>
+            <span class="red-text">LPU</span>
+          </h2>
+          <p class="hero-description">
+            Diploma student in Artificial Intelligence &amp; Machine Learning at Lovely Professional University. Passionate about autonomous robotics, smart gesture drones, embedded circuitry, and practical AI implementations with 3 years of hands-on experience.
+          </p>
+          <div class="worldwide-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8" fill="none"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.8" fill="none"/>
+            </svg>
+            <span>LOVELY PROFESSIONAL UNIVERSITY, PUNJAB</span>
+          </div>
+        </div>
+
+        <!-- Hero Center Tagline & Stats -->
+        <div class="hero-right">
+          <div class="turning-ideas">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" width="22" height="22" fill="#e50914">
+              <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"/>
+            </svg>
+            <p>Turning code &amp; circuits<br>into autonomous<br>intelligent systems.</p>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">YEARS<br>EXPERIENCE</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-label">PROJECTS<br>COMPLETED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <h3 class="section-title">FEATURED PROJECTS</h3>
+        <div class="header-line"></div>
+        <a href="#contact" class="view-all-link">
+          <span>5 COMPLETED PROJECTS</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 01: Arduino Obstacle Avoiding Robot -->
+        <article class="project-card" data-project="robot">
+          <div class="project-media">
+            <img src="assets/project-robot.svg" alt="Arduino Obstacle Avoiding Robot" loading="lazy">
+            <div class="project-overlay-hint">
+              <span>CLICK TO EXPLORE DETAILS</span>
+              <span class="hint-arrow">&nearr;</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-index">01</span>
+            <div class="project-details">
+              <h4 class="project-name">ARDUINO OBSTACLE AVOIDING ROBOT</h4>
+              <p class="project-category">AUTONOMOUS ROBOTICS &amp; SENSORS</p>
+            </div>
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </article>
+
+        <!-- Project 02: Gesture Controlled Drone -->
+        <article class="project-card" data-project="drone">
+          <div class="project-media">
+            <img src="assets/project-drone.svg" alt="Gesture Controlled Drone" loading="lazy">
+            <div class="project-overlay-hint">
+              <span>CLICK TO EXPLORE DETAILS</span>
+              <span class="hint-arrow">&nearr;</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-index">02</span>
+            <div class="project-details">
+              <h4 class="project-name">GESTURE CONTROLLED DRONE</h4>
+              <p class="project-category">AEROSPACE &amp; MPU6050 RF SYSTEM</p>
+            </div>
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </article>
+
+        <!-- Project 03: Wireless Power Using Tesla Coil -->
+        <article class="project-card" data-project="tesla">
+          <div class="project-media">
+            <img src="assets/project-tesla.svg" alt="Wireless Power using Tesla Coil" loading="lazy">
+            <div class="project-overlay-hint">
+              <span>CLICK TO EXPLORE DETAILS</span>
+              <span class="hint-arrow">&nearr;</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-index">03</span>
+            <div class="project-details">
+              <h4 class="project-name">WIRELESS POWER TRANSFER</h4>
+              <p class="project-category">SOLID STATE TESLA COIL RESONANCE</p>
+            </div>
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience & Process Section -->
+    <section id="skills" class="experience-section">
+      <div class="experience-grid">
+        
+        <!-- Left: Education & Skills -->
+        <div class="education-skills-col">
+          <h3 class="column-heading">EDUCATION &amp; SKILLS</h3>
+
+          <!-- Education -->
+          <div class="sub-block">
+            <h4 class="block-label">EDUCATION</h4>
+            <div class="edu-item">
+              <div class="edu-main">
+                <span class="edu-degree">Diploma in AI &amp; ML (Artificial Intelligence &amp; Machine Learning)</span>
+                <span class="edu-school">Lovely Professional University (LPU), Punjab</span>
+              </div>
+              <span class="edu-years">PURSUING</span>
+            </div>
+            <div class="edu-item">
+              <div class="edu-main">
+                <span class="edu-degree">Hands-on Hardware, Embedded Systems &amp; Robotics Prototyping</span>
+                <span class="edu-school">Self-Directed Engineering &amp; Applied Projects</span>
+              </div>
+              <span class="edu-years">3 YRS EXP</span>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="sub-block">
+            <h4 class="block-label">SKILLS &amp; PROFICIENCIES</h4>
+            <div class="skills-tags">
+              <span class="skill-tag highlighted-tag">PYTHON (BASIC)</span>
+              <span class="skill-tag">AI &amp; MACHINE LEARNING</span>
+              <span class="skill-tag">ARDUINO &amp; EMBEDDED C</span>
+              <span class="skill-tag">OBSTACLE AVOIDANCE</span>
+              <span class="skill-tag">GESTURE SENSING (MPU6050)</span>
+              <span class="skill-tag">QUADCOPTER DYNAMICS</span>
+              <span class="skill-tag">TESLA COIL &amp; RESONANCE</span>
+              <span class="skill-tag">WIRELESS POWER HARVESTING</span>
+              <span class="skill-tag">RF COMMUNICATION (NRF24L01)</span>
+              <span class="skill-tag">CIRCUIT DESIGN &amp; SOLDERING</span>
+              <span class="skill-tag">SENSOR INTEGRATION</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Work Process & Quote -->
+        <div class="work-process-col">
+          <div class="process-wrapper">
+            <h3 class="column-heading">PROJECT METHODOLOGY</h3>
+
+            <div class="process-timeline">
+              <!-- Step 01 -->
+              <div class="process-step">
+                <div class="step-badge">
+                  <span class="step-num">01</span>
+                  <div class="step-icon-circle">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="7"/>
+                      <line x1="16" y1="16" x2="21" y2="21"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="step-text">
+                  <h5 class="step-title">DISCOVER &amp; SPECS</h5>
+                  <p class="step-desc">Analyzing physics constraints, sensor accuracy, and microcontroller power limits.</p>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="process-step">
+                <div class="step-badge">
+                  <span class="step-num">02</span>
+                  <div class="step-icon-circle">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 18h6m-4 3h2M9 14h6a5 5 0 0 0 3-4.5c0-3-2.5-5.5-6-5.5s-6 2.5-6 5.5c0 2 1.3 3.8 3 4.5z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="step-text">
+                  <h5 class="step-title">CIRCUIT &amp; CODE</h5>
+                  <p class="step-desc">Drafting schematic diagrams, wiring logic, and writing Python &amp; Arduino algorithms.</p>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="process-step">
+                <div class="step-badge">
+                  <span class="step-num">03</span>
+                  <div class="step-icon-circle">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                      <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="step-text">
+                  <h5 class="step-title">PROTOTYPING</h5>
+                  <p class="step-desc">Breadboard testing of sensors, ultrasonic echoes, and gyro calibration.</p>
+                </div>
+              </div>
+
+              <!-- Step 04 -->
+              <div class="process-step">
+                <div class="step-badge">
+                  <span class="step-num">04</span>
+                  <div class="step-icon-circle">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="16 18 22 12 16 6"/>
+                      <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="step-text">
+                  <h5 class="step-title">HARDWARE BUILD</h5>
+                  <p class="step-desc">Rigid chassis assembly, component soldering, and wireless transmitter pairing.</p>
+                </div>
+              </div>
+
+              <!-- Step 05 -->
+              <div class="process-step">
+                <div class="step-badge">
+                  <span class="step-num">05</span>
+                  <div class="step-icon-circle">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="22" y1="2" x2="11" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="step-text">
+                  <h5 class="step-title">TEST &amp; BENCHMARK</h5>
+                  <p class="step-desc">Live obstacle navigation, aerodynamic stability tuning, and field demonstration.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deep Red Quote Card with Arpan's signature -->
+          <div class="quote-card">
+            <div class="quote-mark">&ldquo;&ldquo;</div>
+            <p class="quote-body">True learning happens when theoretical intelligence bridges seamlessly into physical hardware.</p>
+            <div class="signature">Arpan</div>
+            <div class="quote-footer">
+              <span>LET'S CREATE SOMETHING INNOVATIVE TOGETHER.</span>
+              <span class="plus-mark">+</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications & Credentials Section -->
+    <section id="certifications" class="certifications-section">
+      <div class="section-header">
+        <h3 class="section-title">CERTIFICATES &amp; ACHIEVEMENTS</h3>
+        <div class="header-line"></div>
+        <span class="cert-counter">VERIFIED AWARDS &amp; PROGRAMS</span>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Certificate 01: Cancer Welfare Society -->
+        <div class="cert-card" data-cert="cancer">
+          <div class="cert-thumb-box">
+            <img src="assets/cert-cancer.jpg" alt="Cancer Welfare Society Certificate of Special Effort" loading="lazy">
+            <div class="cert-hover-pill">
+              <span>VIEW FULL CERTIFICATE</span>
+              <span class="hint-arrow">&nearr;</span>
+            </div>
+          </div>
+          <div class="cert-content-inner">
+            <div class="cert-badge">SOCIAL IMPACT &amp; LEADERSHIP</div>
+            <h4 class="cert-title">Cancer Awareness &amp; Prevention Initiative</h4>
+            <div class="cert-meta-info">
+              <span class="cert-issuer">Cancer Welfare Society (ISO 9001:2015 NGO)</span>
+              <span class="cert-date">Class 9 • St. Xavier's Jr/Sr School (April 2024)</span>
+            </div>
+            <p class="cert-desc">Awarded Certificate of Special Effort for voluntary service in the 2-week Nationwide Cancer Control Programme, driving community prevention awareness and voluntary fundraising in accordance with NCCP Govt of India &amp; WHO guidelines.</p>
+            <div class="cert-footer">
+              <span class="cert-skills-pill">Community Leadership</span>
+              <button class="view-cert-btn" data-cert="cancer">
+                <span>Explore Details</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 02: English / Cambridge Uolo Speak -->
+        <div class="cert-card" data-cert="english">
+          <div class="cert-thumb-box">
+            <img src="assets/cert-english.jpg" alt="Uolo Cambridge Speak Program Certificate" loading="lazy">
+            <div class="cert-hover-pill">
+              <span>VIEW FULL CERTIFICATE</span>
+              <span class="hint-arrow">&nearr;</span>
+            </div>
+          </div>
+          <div class="cert-content-inner">
+            <div class="cert-badge">COMMUNICATION &amp; LANGUAGE</div>
+            <h4 class="cert-title">Cambridge Speak English Program</h4>
+            <div class="cert-meta-info">
+              <span class="cert-issuer">Uolo in association with Cambridge University Press</span>
+              <span class="cert-date">Grade 9 • Academic Year 2023–24</span>
+            </div>
+            <p class="cert-desc">Certified completion of Cambridge-aligned English spoken communication, public articulation, conversational fluency, vocabulary building, and structured presentation skills.</p>
+            <div class="cert-footer">
+              <span class="cert-skills-pill">Spoken English</span>
+              <button class="view-cert-btn" data-cert="english">
+                <span>Explore Details</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 03: Sports Meet 2024 100m & 200m -->
+        <div class="cert-card" data-cert="sports">
+          <div class="cert-thumb-box">
+            <img src="assets/cert-sports-100m.jpg" alt="St. Xavier's Sports Meet 2024 Certificate" loading="lazy">
+            <div class="cert-hover-pill">
+              <span>VIEW FULL CERTIFICATE</span>
+              <span class="hint-arrow">&nearr;</span>
+            </div>
+          </div>
+          <div class="cert-content-inner">
+            <div class="cert-badge">ATHLETICS &amp; COMPETITIVE SPRINT</div>
+            <h4 class="cert-title">Annual Sports Meet 2024 — 100M &amp; 200M Podium</h4>
+            <div class="cert-meta-info">
+              <span class="cert-issuer">St. Xavier's Annual Sports Meet</span>
+              <span class="cert-date">3rd Position • 14th March 2024</span>
+            </div>
+            <p class="cert-desc">Secured double podium finishes with Third Position (Bronze) in both the competitive 100 Meter Race and 200 Meter Sprint, demonstrating athletic acceleration, physical discipline, and perseverance.</p>
+            <div class="cert-footer">
+              <span class="cert-skills-pill">100m / 200m Sprint</span>
+              <button class="view-cert-btn" data-cert="sports">
+                <span>Explore Details</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="footer-section">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-title-row">
+            <h3 class="footer-title">LET'S CONNECT</h3>
+            <svg class="sparkle-red" viewBox="0 0 24 24" width="18" height="18" fill="#e50914">
+              <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"/>
+            </svg>
+          </div>
+          <p class="footer-lead">
+            Open for AI/ML collaborations, robotics projects, and technology discussions. Feel free to reach out directly.
+          </p>
+
+          <!-- Contact Details with User's Email, Phone, LinkedIn, GitHub -->
+          <ul class="contact-list">
+            <!-- Email -->
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#e50914" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M22 7l-10 7L2 7"/>
+                </svg>
+              </div>
+              <a href="mailto:vikasakshat1977@gmail.com">vikasakshat1977@gmail.com</a>
+            </li>
+
+            <!-- Phone -->
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#e50914" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <a href="tel:9973056660">+91 9973056660</a>
+            </li>
+
+            <!-- LinkedIn -->
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#e50914" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <a href="https://www.linkedin.com/in/arpan-roy-441504417/" target="_blank" rel="noopener noreferrer">linkedin.com/in/arpan-roy-441504417</a>
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#e50914" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </div>
+              <a href="https://github.com/Astrino04" target="_blank" rel="noopener noreferrer">github.com/Astrino04</a>
+            </li>
+
+            <!-- Location -->
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#e50914" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <span>Lovely Professional University (LPU), Punjab, India</span>
+            </li>
+          </ul>
+
+          <a href="mailto:vikasakshat1977@gmail.com" class="freelance-btn">
+            <span class="btn-arrow">&rarr;</span>
+            <span class="btn-text">GET IN TOUCH</span>
+          </a>
+        </div>
+
+        <!-- Laptop & Mug Mockup -->
+        <div class="footer-visual">
+          <img src="assets/laptop-mockup.svg" alt="Arpan AI & ML Portfolio Mockup" class="laptop-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW DEDICATED SITE FOOTER -->
+    <footer class="site-bottom-footer">
+      <div class="bottom-footer-inner">
+        <div class="footer-brand-col">
+          <span class="footer-logo">ARPAN</span>
+          <p class="footer-tagline">Diploma in AI &amp; ML • Lovely Professional University (LPU)</p>
+        </div>
+
+        <div class="footer-links-col">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certificates</a>
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/Astrino04" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/arpan-roy-441504417/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="footer-back-to-top">
+          <a href="#" class="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            <span>Back to top</span>
+            <span>&uarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright-bar">
+        <p>&copy; 2026 Arpan. All rights reserved. Crafted with smooth interactive scroll canvas.</p>
+        <div class="footer-status-pill">
+          <span class="status-dot"></span>
+          <span>Open for AI &amp; Robotics Projects</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Interactive Project Details Modal -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge" id="modal-badge">CATEGORY</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+        <p class="modal-tagline" id="modal-tagline">Brief project tagline</p>
+      </div>
+
+      <div class="modal-visual-box">
+        <img id="modal-image" src="" alt="Project Schematic Visual">
+      </div>
+
+      <div class="modal-body-content">
+        <div class="modal-section">
+          <h4 class="modal-sec-heading">Project Overview &amp; Architecture</h4>
+          <p id="modal-overview" class="modal-paragraph"></p>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-sec-heading">Hardware &amp; Technical Components</h4>
+          <ul id="modal-components" class="modal-chips-list"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-sec-heading">Key Engineering Highlights</h4>
+          <ul id="modal-highlights" class="modal-check-list"></ul>
+        </div>
+      </div>
+
+      <div class="modal-footer-bar">
+        <a id="modal-github" href="https://github.com/Astrino04" target="_blank" rel="noopener noreferrer" class="modal-primary-btn">
+          <span>View on GitHub</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+        <button class="modal-secondary-btn" id="modal-dismiss">Close Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Certificate Modal -->
+  <div id="cert-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="cert-modal-close" aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge" id="cert-badge">CREDENTIAL</span>
+        <h3 class="modal-title" id="cert-title">Certificate Title</h3>
+        <p class="modal-tagline" id="cert-issuer">Issuing Organization</p>
+      </div>
+
+      <!-- Scanned Certificate Image Display -->
+      <div class="modal-visual-box cert-preview-frame">
+        <img id="cert-modal-img" src="" alt="Official Certificate Document">
+      </div>
+
+      <div class="modal-section">
+        <h4 class="modal-sec-heading">About This Achievement &amp; Impact</h4>
+        <p id="cert-display-details" class="modal-paragraph"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4 class="modal-sec-heading">Key Competencies &amp; Recognition</h4>
+        <ul id="cert-skills-list" class="modal-chips-list"></ul>
+      </div>
+
+      <div class="modal-footer-bar">
+        <a id="cert-verify-link" href="#" target="_blank" rel="noopener noreferrer" class="modal-primary-btn">
+          <span>Open High-Res Document</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+        <button class="modal-secondary-btn" id="cert-dismiss">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Astrino AI Floating Assistant -->
+  <div id="astrino-ai-container" class="astrino-widget">
+    <!-- Floating Launcher Pill -->
+    <button id="astrino-launcher" class="astrino-launcher" aria-label="Open Astrino AI Assistant">
+      <div class="astrino-avatar-pulse">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ffffff" stroke-width="2">
+          <circle cx="12" cy="12" r="3" fill="#e50914" stroke="#ffffff"/>
+          <path d="M12 2v3m0 14v3M2 12h3m14 0h3"/>
+          <path d="M4.93 4.93l2.12 2.12m9.9 9.9l2.12 2.12M4.93 19.07l2.12-2.12m9.9-9.9l2.12-2.12"/>
+        </svg>
+      </div>
+      <div class="astrino-launcher-text">
+        <span class="ai-name">ASTRINO AI</span>
+        <span class="ai-status">Online • Ask Me Anything</span>
+      </div>
+    </button>
+
+    <!-- Chat Dialog Window -->
+    <div id="astrino-chatbox" class="astrino-chatbox" aria-hidden="true">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="ai-badge-circle">⚡</div>
+          <div>
+            <h4 class="chat-header-title">ASTRINO AI</h4>
+            <span class="chat-header-sub">Arpan's Intelligent Assistant</span>
+          </div>
+        </div>
+        <button id="astrino-close" class="chat-close-btn" aria-label="Close Chat">&times;</button>
+      </div>
+
+      <!-- Messages Body -->
+      <div id="astrino-messages" class="chat-messages">
+        <!-- Initial Welcome Message from Astrino -->
+        <div class="chat-msg ai-msg">
+          <div class="msg-avatar">⚡</div>
+          <div class="msg-bubble">
+            <p>Hey there! I am <strong>Astrino AI</strong>, Arpan's portfolio intelligence agent. 🤖</p>
+            <p>I know everything about Arpan's <strong>AI &amp; ML studies at LPU</strong>, his <strong>3 engineering projects</strong>, technical skills, certifications, and contact details. What would you like to know?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Prompt Chips -->
+      <div class="chat-chips-row">
+        <button class="ai-chip" data-query="Who is Arpan?">👤 Who is Arpan?</button>
+        <button class="ai-chip" data-query="Explain his 3 projects">🛠️ His Projects</button>
+        <button class="ai-chip" data-query="What are Arpan's skills?">💻 Technical Skills</button>
+        <button class="ai-chip" data-query="Show me his certificates">📜 Certificates</button>
+        <button class="ai-chip" data-query="How can I contact Arpan?">📞 Contact Info</button>
+      </div>
+
+      <!-- Input Bar -->
+      <form id="astrino-form" class="chat-input-bar">
+        <input type="text" id="astrino-input" placeholder="Ask Astrino AI anything..." autocomplete="off">
+        <button type="submit" id="astrino-send-btn" aria-label="Send Message">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
